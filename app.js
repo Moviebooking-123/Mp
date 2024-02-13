@@ -1,8 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require("path");
-const port = 1234;
-const hostname = 0.0.0.0;
+const port = 1234;let hostname = 0.0.0.0;
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 const static_path = path.join(__dirname, "/public");
